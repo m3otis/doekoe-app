@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/ng2-slim-loading-bar/style.css';
+
+app-toast {
+  position: fixed;
+  top: 5vh;
+  right: 5vh;
+}
+
+@media only screen and (orientation: portrait) {
+  app-toast {
+    position: fixed;
+    top: 1vh;
+    left: 0px;
+  }
+
+  .toast {
+    position: fixed;
+    max-width: unset !important;
+    width: 100vw !important;
+    margin: 0 0 0 0 !important;
+  }
+}

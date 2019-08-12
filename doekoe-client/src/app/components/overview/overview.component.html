@@ -1,0 +1,22 @@
+<div class="card">
+  <h5 class="card-header">Overview</h5>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let entry of entries">
+          <td>{{ entry.name }}</td>
+          <td>{{ entry.description }}</td>
+          <td>${{ entry.amount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card-footer">Total: {{ calculateTotal() }}</div>
+</div>
